@@ -50,7 +50,7 @@ feature_ranges = {
         "type": "numerical",
         "min": 0,
         "max": 20,
-        "default": 10,
+        "default": 0,
         "step": 1  # 确保输入为整数
     }
 }
@@ -103,4 +103,5 @@ if st.button("Predict"):
     )
     ax.axis('off')
     plt.savefig("prediction_text.png", bbox_inches='tight', dpi=300)
+
     st.image("prediction_text.png")
